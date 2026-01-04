@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fer 3D | Regalos y Negocios</title>
+  <style>
+    :root {
+      --bg-main: #0b0b0b;
+      --bg-card: #141414;
+      --blue-main: #1e90ff;
+      --blue-soft: #4fb3ff;
+      --orange-main: #f5a623;
+      --text-main: #ffffff;
+      --text-soft: #cfcfcf;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg-main);
+      color: var(--text-main);
+    }
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+    }
+    header img {
+      max-width: 140px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+      color: var(--blue-soft);
+    }
+    header p {
+      font-size: 1.1rem;
+      color: var(--text-soft);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, var(--blue-main), var(--orange-main));
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--orange-main);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--bg-card);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--blue-soft);
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+    }
+    .cta {
+      text-align: center;
+      background: #101010;
+      padding: 60px 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #8a8a8a;
+    }
+      .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 62px;
+      height: 62px;
+      background: linear-gradient(135deg, #1e90ff, #4fb3ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 18px rgba(30,144,255,0.6);
+      z-index: 1000;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 26px rgba(30,144,255,0.85);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo-fer3d.png" alt="Fer 3D" style="max-width:120px;margin-bottom:20px;" />
+  <h1>Fer 3D</h1>
+  <p>Regalos personalizados y soluciones 3D para negocios<br>Envíos a todo el país</p>
+  <a class="btn" href="https://wa.me/5492983664364" target="_blank">Comprar por WhatsApp</a>
+</header>
+
+<section>
+  <h2>📸 Productos Destacados</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="1.jpg" alt="Llaveros faro personalizados" style="width:100%;border-radius:10px;margin-bottom:15px;" />
+      <h3>Llaveros personalizados</h3>
+      <p>Modelos únicos en 3D. Ideales para regalar o identificar tu hogar.</p>
+    </div>
+    <div class="card">
+      <img src="2.jpeg" alt="Llavero personalizado con logo" style="width:100%;border-radius:10px;margin-bottom:15px;" />
+      <h3>Llaveros con logo</h3>
+      <p>Perfectos para negocios, clubes o eventos. Personalizados con tu marca.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🎁 Regalos Personalizados</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Lámparas LED</h3>
+      <p>Nombres, frases, fechas especiales y diseños únicos. Un regalo que se usa todos los días.</p>
+    </div>
+    <div class="card">
+      <h3>Carteles 3D</h3>
+      <p>Decoración moderna para hogares, habitaciones y eventos.</p>
+    </div>
+    <div class="card">
+      <h3>Llaveros Premium</h3>
+      <p>Personalizados con nombres, coordenadas, mascotas o logos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🏪 Productos para Negocios</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Porta QR</h3>
+      <p>Diseño profesional con logo. Ideal para pagos digitales.</p>
+    </div>
+    <div class="card">
+      <h3>Exhibidores</h3>
+      <p>Displays personalizados para mostrar productos y mejorar la imagen de marca.</p>
+    </div>
+    <div class="card">
+      <h3>Cartelería 3D</h3>
+      <p>Letras, logos y señalética para mostradores y locales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Hecho a medida, impreso en 3D</h2>
+  <p>Contanos tu idea y la hacemos realidad</p>
+  <a class="btn" href="https://wa.me/5492983664364" target="_blank">Pedir presupuesto</a>
+</section>
+
+<footer>
+  © 2026 – Fer 3D | Envíos a todo el país
+</footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/5492983664364" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="pngegg.png" alt="WhatsApp" style="width:34px;height:34px;" />
+  </a>
+
+</body>
+</html>
